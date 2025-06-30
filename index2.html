@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script src="https://cdn.tailwindcss.com "></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="IMYTI - Soporte técnico, desarrollo web y aplicaciones personalizadas. ¡Contáctanos al 7221304588!">
+  <title>IMYTI - Consultoría en Sistemas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="font-poppins text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+      <a href="#" class="text-2xl font-bold text-[#0D1B2A]">IMYTI</a>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#services" class="hover:text-[#1E90FF] transition">Servicios</a>
+        <a href="#contact" class="hover:text-[#1E90FF] transition">Contacto</a>
+      </nav>
+      <a href=" https://wa.me/7221304588 " target="_blank" class="bg-[#1E90FF] hover:bg-blue-600 text-white px-4 py-2 rounded">Llámanos</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero bg-[#0D1B2A] text-white py-20">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+        <h1 class="text-4xl font-bold mb-4">¡Tu computadora o red presentan fallas? ¡Nosotros lo solucionamos! 🔧</h1>
+        <p class="mb-6">En IMYTI, ofrecemos soporte técnico profesional para que tu equipo funcione sin interrupciones.</p>
+        <a href="https://wa.me/7221304588 " target="_blank" class="bg-[#1E90FF] hover:bg-blue-600 text-white px-6 py-3 rounded shadow inline-block transition">Contáctanos ahora</a>
+      </div>
+      <div class="md:w-1/2 mt-10 md:mt-0">
+        <img src="assets/img/computer-repair.png" alt="Soporte técnico IMYTI" class="w-full max-w-md mx-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Soporte Técnico</h3>
+          <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700">
+            <li>Reparación y mantenimiento de computadoras</li>
+            <li>Eliminación de virus y optimización del sistema</li>
+            <li>Configuración de redes y WiFi</li>
+            <li>Respaldo y recuperación de datos</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Desarrollo Web</h3>
+          <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700">
+            <li>HTML, CSS, JavaScript – Diseño responsivo</li>
+            <li>PHP, Python, Node.js – Desarrollo escalable</li>
+            <li>WooCommerce, Shopify – Tiendas en línea</li>
+            <li>React, Vue.js – Interfaces dinámicas</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Apps Personalizadas</h3>
+          <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700">
+            <li>Desarrollo Android & iOS</li>
+            <li>Aplicaciones web interactivas</li>
+            <li>Integración de APIs y bases de datos</li>
+            <li>Diseños intuitivos y personalizados</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Contáctanos</h2>
+      <div class="max-w-lg mx-auto bg-white p-8 rounded shadow">
+        <form action="https://formspree.io/f/YOUREMAIL " method="POST">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-medium mb-2">Nombre</label>
+            <input type="text" id="name" name="name" required class="w-full border border-gray-300 p-3 rounded">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-medium mb-2">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required class="w-full border border-gray-300 p-3 rounded">
+          </div>
+          <div class="mb-4">
+            <label for="phone" class="block text-gray-700 font-medium mb-2">Teléfono</label>
+            <input type="tel" id="phone" name="phone" required class="w-full border border-gray-300 p-3 rounded">
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required class="w-full border border-gray-300 p-3 rounded"></textarea>
+          </div>
+          <button type="submit" class="bg-[#1E90FF] hover:bg-blue-600 text-white px-6 py-3 rounded w-full transition">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#0D1B2A] text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>© 2025 IMYTI. Todos los derechos reservados.</p>
+      <p class="mt-2">📞 Teléfono: 7221304588 | 💻 Sitio Web: imyti.com.mx</p>
+      <div class="mt-4 space-x-4">
+        <a href="#" class="hover:text-[#1E90FF]">LinkedIn</a>
+        <a href="#" class="hover:text-[#1E90FF]">Instagram</a>
+        <a href="#" class="hover:text-[#1E90FF]">Facebook</a>
+        <a href="https://wa.me/7221304588 " target="_blank" class="hover:text-green-400">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
